@@ -128,6 +128,8 @@ $(document).ready(function () {
   // populate schedule
   let schedule_html = ``
 
+  let keynote_counter = 0;
+  
   schedule.forEach(schedule_entry => {
     let icon_html = ``
     let effect = ``
@@ -140,12 +142,13 @@ $(document).ready(function () {
     let align_left = ``
 
     if (schedule_entry[0] == 'inv-talk'){
+      keynote_counter++;
       speaker_details = talk_speaker_details[schedule_entry[3]]
       talk_mode = schedule_entry[4] == 'online' ? `<span class='has-text-danger bold'>[Online]</span>` : ``
       align_left = (speaker_details[5] != `` && speaker_details[6] != ``) ? "align-left" : ""
       title = speaker_details[5] != `` ? `<h5 class="center has-text-success bold">${speaker_details[5]}</h5>` : ``
       abstract = speaker_details[6] != `` ? `<p><span class="bold">Abstract.</span> ${speaker_details[6]}</p>` : `<p class="center">Details coming soon. Thanks for your patience.</p>`
-      title_abstract_html = ` ${talk_mode}: ${speaker_details[0]} (<span class='toggle-btn has-text-success'>Details</span>)`
+      title_abstract_html = ` ${talk_mode}: Keynote Speaker ${keynote_counter} (<span class='toggle-btn has-text-success'>Details</span>)`
       hidden_row_html = `<tr class="hidden-content ${align_left}"><td colspan="2">${title}${abstract}</td></tr>`
     }
     if(['lunch-break', 'coffee-break'].includes(schedule_entry[0])){
