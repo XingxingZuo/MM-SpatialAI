@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html>
 
+
+<style>
+  .cfp-card {
+    border-radius: 16px;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f9fbff, #eef3ff);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+
+  .cfp-card h2 {
+    margin-bottom: 1rem;
+  }
+
+  .cfp-submission {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid #3273dc;
+    background: #f5f7fb;
+    border-radius: 8px;
+  }
+
+  .cfp-topics {
+    margin-top: 1rem;
+    columns: 2; /* two-column list */
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    gap: 2rem;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .cfp-topics li {
+    position: relative;
+    padding-left: 1.2em;
+    margin-bottom: 0.5em;
+  }
+
+  .cfp-topics li::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    color: #3273dc;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .cfp-topics {
+      columns: 1;
+    }
+  }
+</style>
+
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta id="meta-desc" name="description"
-    content="Web home for the Workshop for Neural Representation Learning for Robot Manipulation @ CoRL2023">
-  <meta id="meta-author" name="author" content="Jishnu Jaykumar P">
+    content="Web home for the Workshop for MMSpatialAI  @ ICRA2026">
+  <meta id="meta-author" name="author" content="Xingxing Zuo">
   <title id="title"></title>
 
   <link href="./assets/css/fonts.css" rel="stylesheet">
@@ -19,13 +72,13 @@
   <link rel="stylesheet" href="./assets/css/index.css">
   <link rel="icon" href="#">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHTS66Q6JT"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6PYDPEBZZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-JHTS66Q6JT');
+    gtag('config', 'G-L6PYDPEBZZ');
   </script>
 </head>
 
@@ -68,7 +121,7 @@
                 <br-->
 
                 <!-- Recording. -->
-                <span class="link-block">
+<!--                 <span class="link-block">
                   <a href="https://www.youtube.com/playlist?list=PL1A3o7iF8HvI33TkcU3-Z_gU0gs7f0Lhj" class="external-link button is-normal is-rounded is-primary" style="box-shadow: 0px 0px 5px 0px lightgrey">
                     <span class="icon">
                       <i class="fa fa-video"></i>
@@ -76,7 +129,7 @@
                     <span>Recordings</span>
                   </a>
                 </span>
-                <br>
+                <br> -->
                 
                 <!-- Speakers. -->
                 <span class="link-block">
@@ -135,40 +188,59 @@
           <h2 class="title is-3">Overview</h2>
           <div class="content has-text-justified">
             <p>
-              Representations of scenes and objects play a crucial role in robot manipulation. Traditional ways
-              represent scenes and objects using explicit geometric primitives, such as 3D meshes, 3D point clouds, 3D
-              voxels, etc. These geometric representations have been widely explored in perception, grasp planning and
-              motion planning in manipulation. However, they still have difficulties in handling challenging
-              manipulation scenarios involving unseen objects, articulated objects, or deformable objects. Recently,
-              neural representations of scenes and objects, such as neural radiance fields and deep signed distance
-              fields, have introduced, which demonstrate superior performance on visual rendering and shape
-              reconstruction tasks. Ideally, neural representations can handle arbitrary scenes and objects by encoding
-              them into neural networks. However, how to learn these representations from data and how to utilize them
-              for robot manipulation remain as open questions.
-              This workshop will represent a great opportunity to bring together experts who are exploring neural
-              representations for robot manipulation, and provide an arena for stimulating discussion and debate on
-              neural representation learning for robot manipulation. Specific questions we aim to address include:
-            <ul>
-              <li>
-                What neural representations are useful for robot manipulation?
-              </li>
-              <li>
-                What should a neural representation capture (geometry, visual appearance, dynamics, etc.) for robot
-                manipulation?
-              </li>
-              <li>
-                How to learn and use neural representations for robot manipulation?
-              </li>
-              <li>
-                How to benchmark the progress in neural representation learning for robot manipulation?
-              </li>
-            </ul>
+              Achieving robust navigation and open-world understanding remains one of the central challenges for deploying autonomous systems in complex, dynamic, and unstructured environments. While individual sensing modalities such as cameras, LiDAR, or inertial measurements have enabled significant advances in SLAM and perception, they face inherent limitations under adverse conditions and diverse scenarios. To move beyond these constraints, the robotics community is increasingly exploring the integration of multiple sensing modalities—including but not limited to vision, LiDAR, inertial, radar, audio, and tactile signals—combined with emerging advances in learning-based estimation, neural implicit mapping, and foundation models. This workshop will bring together researchers from robotics, computer vision, and AI to discuss new methods for multi-modal fusion, scalable and robust SLAM, open-vocabulary 3D scene understanding, and human-robot interaction in open-world contexts. By bridging classical state estimation with modern learning approaches, the workshop aims to identify the critical hurdles to robust navigation, advance the frontiers of open-world spatial intelligence, and chart a roadmap for generalizable autonomy across sensing, tasks, and domains.
             </p>
           </div>
         </div>
       </div>
       <!--/ Overview. -->
     </div>
+  </section>
+
+  <section class="section cfp-section">
+  <div class="container is-max-desktop">
+    <!-- CFP -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <div class="cfp-card box">
+          <h2 class="title is-3 has-text-primary">📢 Call for Contributions</h2>
+          <div class="content has-text-justified">
+            <p class="lead">
+              We invite researchers and practitioners from robotics, computer vision, and AI
+              to share advances in spatial intelligence—preliminary results, bold ideas,
+              and lessons from industry. Accepted works will be featured in spotlight talks
+              and posters, and all papers will appear on the workshop site. Authors retain IP.
+              We may also organize a journal special issue for selected top papers.
+            </p>
+
+            <div class="cfp-submission">
+              <strong>Submission formats:</strong><br>
+              • Research Papers (up to 6 pages, excl. refs)<br>
+              • Field Reports / Visionary Papers (2–4 pages, excl. refs)
+            </div>
+
+            <h3 class="title is-5 has-text-link mt-5">Topics of Interest</h3>
+            <ul class="cfp-topics">
+              <li>Visual / Visual-Inertial Navigation</li>
+              <li>LiDAR–Inertial–Camera Fusion</li>
+              <li>Robust Multi-modal SLAM</li>
+              <li>Learning-based Pose Estimation</li>
+              <li>Neural-implicit Dense Mapping</li>
+              <li>Foundation-enabled SLAM</li>
+              <li>Open-vocabulary 3D Scene Understanding</li>
+              <li>Learned Inertial Odometry</li>
+              <li>FM-based Poses & 3D Geometry</li>
+              <li>Human Motion Estimation & Generation</li>
+              <li>Mobile Robotics with Mixed Reality</li>
+              <li>Multi-modal Foundation Models for Robotics</li>
+              <li>Online Continual Learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ CFP -->
+  </div>
   </section>
 
 
@@ -181,21 +253,17 @@
       <!--/ Speakers. -->
   </section>
 
-  <section id="accepted-presentations" class="section">
+  <!--/ Accepted Presentations. -->
+<!--   <section id="accepted-presentations" class="section">
     <div class="container is-max-desktop">
-      <!-- Accepted Presentations. -->
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <h2 class="title is-3">Accepted Presentations</h2>
-          <!-- <span class="has-text-success bold">If you are interested in presenting your work, please check out the <a class="has-text-info" href="./call-for-presentations/" target="_blank" rel="noopener noreferrer">Call for Presentations</a> page.</span> -->
-          <!-- Coming soon. Thanks for your patience. -->
-          <!-- <div class="has-text-danger bold"><i class="fa fa-info-circle" aria-hidden="true"></i> Spotlight and poster presenter details will be updated after acceptance notification is sent.<br>For reference, a sample list is depicted below.</div><br> -->
           <div id="ppt-list" class="content has-text-justified"></div>
       </div>
     </div>
-    <!--/ Accepted Presentations. -->
     </div>
-  </section>
+  </section> -->
 
   <section id="organizers" class="section">
     <!-- Organizers. -->
@@ -229,9 +297,10 @@
   </section>
 
 
-  <section id="schedule" class="section">
+  <!-- Related Workshop -->
+  <!-- <section id="schedule" class="section">
     <div class="container is-max-desktop">
-      <!-- Related Workshop -->
+
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <h2 class="title is-3">Related Workshops</h2>
@@ -245,9 +314,8 @@
           </div>
       </div>
     </div>
-        <!--/ Related Workshop. -->
     </div>
-  </section>
+  </section> -->
 
   <section id="contact" class="section">
     <div class="container is-max-desktop">
@@ -257,7 +325,7 @@
           <h2 class="title is-3">Contact</h2>
           <div class="content center has-text-justified">
             Please feel free to send us your queries via email at <a
-              href="mailto:neurlrm.workshop@gmail.com">neurlrm.workshop@gmail.com</a>
+              href="xingxing.zuo@mbzuai.ac.ae">xingxing.zuo@mbzuai.ac.ae</a>
           </div>
         </div>
       </div>

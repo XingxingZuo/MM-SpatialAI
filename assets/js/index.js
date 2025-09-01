@@ -179,8 +179,8 @@ $(document).ready(function () {
           </svg>
         </a-->
         <br>
-        <p>Last updated on: <span id="last-updated"></span> | Page template borrowed from <a target="_blank" href="https://irvlutd.github.io/FewSOL"><span
-              class="small-caps black-font">FewSOL</span></a>.</p>
+        <p>Last updated on: <span id="last-updated"></span> | Page template borrowed from <a target="_blank" href="https://neurl-rmw.github.io/"><span
+              class="small-caps black-font">NeuRL-RMW</span></a>.</p>
       </div>
     </div>
   </footer>`)

@@ -1,7 +1,7 @@
-const project_name = `Workshop for Neural Representation Learning for Robot Manipulation`
-const proj_small_caps = `<span class="small-caps">NeuRL-RMW</span>: `
-const conference_details = ['CoRL 2023', 'https://www.corl2023.org/', 'Muse 5', 'assets/images/corl23_pink_logo.jpg']
-const workshop_date = `November 6, 2023`
+const project_name = `Multi-Modal Spatial Intelligence for Robust Navigation and Open-World Understanding `
+const proj_small_caps = `<span class="small-caps">MMSpatialAI Workshop</span>: `
+const conference_details = ['ICRA 2026', 'https://2026.ieee-icra.org/', 'Vinenna, Austria', 'assets/images/icra26_logo.png']
+const workshop_date = `TBD, June 1-5, 2026`
 
 const talk_speaker_details = {
   'ss': ['Shuran Song', './assets/images/talks/shuran_song.jpg', 'Assistant Professor', 'Stanford University', 'https://shurans.github.io/', 'Policy Representation for Robot Manipulation', ''],
@@ -13,13 +13,12 @@ const talk_speaker_details = {
 }
 
 const organizers_details = [
-  ['Karthik Desingh', 'assets/images/organizers/karthik_desingh.jpeg', 'Assistant Professor', 'University of Minnesota, Twin Cities', 'https://karthikdesingh.com'],
-  ['Changhyun Choi', 'assets/images/organizers/Changhyun_Choi.jpg', 'Assistant Professor', 'University of Minnesota, Twin Cities', 'https://cse.umn.edu/ece/changhyun-choi'],
-  ['Yu Xiang', 'assets/images/organizers/Yu_Xiang.jpg', 'Assistant Professor', 'The University of Texas at Dallas', 'https://yuxng.github.io'],
-  ['Jishnu Jaykumar Padalunkal', 'assets/images/organizers/Jishnu-Jaykumar-Padalunkal.jpg', 'PhD Student', 'The University of Texas at Dallas', 'https://jishnujayakumar.github.io'],
-  ['Ninad Khargonkar', 'assets/images/organizers/Ninad-Khargonkar.jpg', 'PhD Student', 'The University of Texas at Dallas', 'https://kninad.github.io'],
-  ['Sai Haneesh Allu', 'assets/images/organizers/Sai-Haneesh-Allu.webp', 'PhD Student', 'The University of Texas at Dallas', 'https://www.linkedin.com/in/sai-haneesh-allu'],
-  ['Alireza Rezazadeh', 'assets/images/organizers/Alireza-Rezazadeh.png', 'PhD Student', 'University of Minnesota, Twin Cities', 'https://www.alireza.page'],
+  ['Xingxing Zuo', 'assets/images/organizers/XingxingZuo.png', 'Assistant Professor', 'MBZUAI', 'https://xingxingzuo.github.io/'],
+  ['Yafei Hu', 'assets/images/organizers/YafeiHu.png', 'Researcher', 'Robotics and AI Institute', 'https://jeffreyyh.github.io/'],
+  ['Lukas Schmid', 'assets/images/organizers/LukasSchmid.png', 'Postdoc', 'MIT', 'https://schmluk.github.io/'],
+  ['Ayoung Kim', 'assets/images/organizers/AyoungKim.jpg', 'Associate Professor', 'Seoul National University', 'https://ayoungk.github.io/'],
+  ['Stefan Leutenegger', 'assets/images/organizers/StefanLeutenegger1.png', 'Associate Professor', 'ETH Zurich', 'https://mrl.ethz.ch/the-group/people/lab-members/stefan-leutenegger.html'],
+  ['Guoquan Huang', 'assets/images/organizers/GuoquanHuang.jpg', 'Professor', 'University of Delaware', ' https://udel.edu/~ghuang/'],
 ]
 
 const accepted_presentations = [

@@ -1,1 +1,1 @@
-A simple website template for academic and research workshops
+A simple website for academic and research workshops
