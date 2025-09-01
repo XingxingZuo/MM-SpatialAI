@@ -85,6 +85,13 @@ font-style: italic;
   height: 9rem !important; /* Set the same value as width to make it a square */
   object-fit: cover !important; /* Preserve the image's aspect ratio and cover the container */
   border-radius: 30%;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .organizer-affiliation-logo-content-image {
