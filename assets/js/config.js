@@ -7,9 +7,10 @@ const talk_speaker_details = {
   'aw': ['Alex Wong', './assets/images/talks/alex-wong.jpg', 'Assistant Professor', 'Yale University', 'https://vision.cs.yale.edu/members/alex-wong/', 'TBD', ''],
   'hb': ['Hermann Blum', './assets/images/talks/hermann_blum.webp', 'Junior Professor', 'University of Bonn', 'https://hermannblum.net/', 'TBD', ''],
   'ds': ['Dezhen Song', './assets/images/talks/Dezhen-Song.jpg', 'Professor', 'MBZUAI', 'https://mbzuai.ac.ae/study/faculty/dezhen-song/', 'TBD', ''],
-  'ft': ['Federico Tombari', './assets/images/talks/Federico-Tombari.jpg', 'Director of Research', 'Google Zurich', 'https://federicotombari.github.io/', 'TBD', ''],
-  'ss': ['Sebastian Scherer', './assets/images/talks/Sebastian-Scherer.jpg', 'Associate Research Professor', 'Carnegie Mellon University', 'https://theairlab.org/team/sebastian/', 'TBD', ''],
-  'az': ['Andy Zeng', './assets/images/talks/Andy-Zeng.jpg', 'Co-founder', 'Generalist', 'https://andyzeng.github.io/', 'TBD', ''],
+  'tm': ['Tim Barfoot', './assets/images/talks/Tim Barfoot.jpeg', 'Professor', 'University of Toronto', 'https://discover.research.utoronto.ca/17296-tim-barfoot', 'TBD', ''],
+  'tbd1': ['TBD', './assets/images/talks/TBD', 'TBD', 'TBD', 'TBD', 'TBD', ''],
+  'tbd2': ['TBD', './assets/images/talks/Sebastian-Scherer.jpg', 'Associate Research Professor', 'Carnegie Mellon University', 'https://theairlab.org/team/sebastian/', 'TBD', ''],
+
 }
 
 const organizers_details = [
@@ -48,17 +49,17 @@ const org_affiliation_logos = [
 // event-alias, time slot, event name, person alias from talk_speaker_details, ppt mode
 // last two are for inv-talk event-alias entries
 const schedule = [
-  ['intro', '08:45 - 09:00', 'Introduction'],
-  ['inv-talk', '09:00 - 09:30', 'Invited Talk', 'hb', 'in-person'],
-  ['spot-ppt', '09:30 - 10:30', 'Spotlight Presentations'],
-  ['coffee-break', '10:30 - 11:30', '<span class="bold has-text-info">Spotlight Posters (Muse 1)</span> & Coffee Break'],
-  ['inv-talk', '11:30 - 12:00', 'Invited Talk', 'ss', 'in-person'],
-  ['inv-talk', '12:00 - 12:30', 'Invited Talk',  'ds', 'in-person'],
-  ['lunch-break', '12:30 - 14:00', 'Lunch Break'],
-  ['inv-talk', '14:00 - 14:30', 'Invited Talk', 'ft', 'in-person'],
-  ['spot-ppt', '14:30 - 15:30', 'Spotlight presentations'],
-  ['coffee-break', '15:30 - 16:00', 'Coffee Break'],
+  ['intro', '08:20 - 08:30', 'Introduction'],
+  ['inv-talk', '08:30 - 09:00', 'Invited Talk', 'hb', 'in-person'],
+  ['spot-ppt', '09:00 - 10:00', 'Spotlight Presentations'],
+  ['coffee-break', '10:00 - 11:00', '<span class="bold has-text-info">Spotlight Posters (Muse 1)</span> & Coffee Break'],
+  ['inv-talk', '11:00 - 11:30', 'Invited Talk', 'tbd2', 'in-person'],
+  ['inv-talk', '11:30 - 12:00', 'Invited Talk',  'ds', 'in-person'],
+  ['lunch-break', '12:30 - 13:30', 'Lunch Break'],
+  ['inv-talk', '13:30 - 14:00', 'Invited Talk', 'tbd1', 'in-person'],
+  ['spot-ppt', '14:00 - 15:00', 'Spotlight Presentations'],
+  ['coffee-break', '15:00 - 16:00', 'Coffee Break'],
   ['inv-talk', '16:00 - 16:30', 'Invited Talk', 'aw', 'in-person'],
-  ['inv-talk', '16:30 - 17:00', 'Invited Talk', 'az', 'in-person'],
+  ['inv-talk', '16:30 - 17:00', 'Invited Talk', 'tm', 'in-person'],
   ['disc', '17:00 - 17:05', 'Conclusion'], 
 ]
