@@ -151,12 +151,15 @@ $(document).ready(function () {
       title_abstract_html = ` ${talk_mode}: Keynote Speaker ${keynote_counter} (<span class='toggle-btn has-text-success'>Details</span>)`
       hidden_row_html = `<tr class="hidden-content ${align_left}"><td colspan="2">${title}${abstract}</td></tr>`
     }
-    if(['lunch-break', 'coffee-break'].includes(schedule_entry[0])){
+    if(['lunch-break', 'coffee-break', 'award'].includes(schedule_entry[0])){
       if (schedule_entry[0] == 'lunch-break'){
         icon_html = `<i class="fas fa-utensils icon" style="position: relative;top: 5px; margin-left:5px"></i>`
       }
       if (schedule_entry[0] == 'coffee-break'){
         icon_html = `<i class="fas fa-coffee icon" style="position: relative;top: 5px; margin-left:5px"></i>`
+      }
+      if (schedule_entry[0] == 'award'){
+        icon_html = `<i class="fas fa-trophy icon" style="position: relative;top: 5px; margin-left:5px"></i>`
       }
     effect = `notification is-warning is-light`
     }
