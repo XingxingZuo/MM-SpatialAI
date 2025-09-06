@@ -16,7 +16,7 @@ const talk_speaker_details = {
 const organizers_details = [
   ['Xingxing Zuo', 'assets/images/organizers/XingxingZuo.png', 'Assistant Professor', 'MBZUAI', 'https://xingxingzuo.github.io/'],
   ['Yafei Hu', 'assets/images/organizers/YafeiHu.png', 'Researcher', 'Robotics and AI Institute', 'https://jeffreyyh.github.io/'],
-  ['Lukas Schmid', 'assets/images/organizers/LukasSchmid.png', 'Postdoc', 'MIT', 'https://schmluk.github.io/'],
+  ['Lukas Schmid', 'assets/images/organizers/LukasSchmid.png', 'Research Scientist', 'MIT', 'https://schmluk.github.io/'],
   ['Ayoung Kim', 'assets/images/organizers/AyoungKim.jpg', 'Associate Professor', 'Seoul National University', 'https://ayoungk.github.io/'],
   ['Stefan Leutenegger', 'assets/images/organizers/StefanLeutenegger.png', 'Associate Professor', 'ETH Zurich', 'https://mrl.ethz.ch/the-group/people/lab-members/stefan-leutenegger.html'],
   ['Guoquan Huang', 'assets/images/organizers/GuoquanHuang.jpg', 'Professor', 'University of Delaware', ' https://udel.edu/~ghuang/'],
