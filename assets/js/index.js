@@ -185,7 +185,7 @@ $(document).ready(function () {
           </svg>
         </a-->
         <br>
-        <p>Page template borrowed from <a target="_blank" href="https://neurl-rmw.github.io/"><span
+        <p>Last updated on: <span id="last-updated"></span> | Page template borrowed from <a target="_blank" href="https://neurl-rmw.github.io/"><span
               class="small-caps black-font">NeuRL-RMW</span></a>.</p>
       </div>
     </div>
