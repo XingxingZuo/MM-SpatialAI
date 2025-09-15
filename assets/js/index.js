@@ -100,8 +100,8 @@ $(document).ready(function () {
 
   // talk content
   talk_content = Object.values(talk_speaker_details)
-  populate_people_html('talk-content1', talk_content.slice(0, 3))
-  populate_people_html('talk-content2', talk_content.slice(3, 4))
+  populate_people_html('talk-content1', talk_content.slice(0, 4))
+  populate_people_html('talk-content2', talk_content.slice(4, 7))
 
   // organizers content
   populate_people_html('organizer-content-1', organizers_details.slice(0, 3))
@@ -200,7 +200,8 @@ $(document).ready(function () {
   });
 
   // Last updated
-  var apiUrl = "https://api.github.com/repos/NeuRL-RMW/NeuRL-RMW.github.io/commits?sha=main&per_page=1";
+  // var apiUrl = "https://api.github.com/repos/NeuRL-RMW/NeuRL-RMW.github.io/commits?sha=main&per_page=1";
+  var apiUrl = "https://api.github.com/repos/XingxingZuo/MM-SpatialAI/commits?sha=main&per_page=1";
   $.getJSON(apiUrl, function (data) {
     var commitDate = new Date(data[0].commit.committer.date);
     var formattedDate = commitDate.toDateString();

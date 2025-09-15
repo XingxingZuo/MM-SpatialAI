@@ -7,10 +7,12 @@ const talk_speaker_details = {
   'aw': ['Alex Wong', './assets/images/talks/alex-wong.jpg', 'Assistant Professor', 'Yale University', 'https://vision.cs.yale.edu/members/alex-wong/', 'TBD', ''],
   'hb': ['Hermann Blum', './assets/images/talks/hermann_blum.webp', 'Junior Professor', 'University of Bonn', 'https://hermannblum.net/', 'TBD', ''],
   'ds': ['Dezhen Song', './assets/images/talks/Dezhen-Song.jpg', 'Professor', 'MBZUAI', 'https://mbzuai.ac.ae/study/faculty/dezhen-song/', 'TBD', ''],
-  'tm': ['Tim Barfoot', './assets/images/talks/Tim Barfoot.jpeg', 'Professor', 'University of Toronto', 'https://discover.research.utoronto.ca/17296-tim-barfoot', 'TBD', ''],
+  'tm': ['Timothy D. Barfoot', './assets/images/talks/Tim Barfoot.jpeg', 'Professor', 'University of Toronto', 'https://discover.research.utoronto.ca/17296-tim-barfoot', 'TBD', ''],
+  'mc': ['Margarita Chli', './assets/images/talks/MargaritaChli.png', 'Professor', 'ETH Zurich & University of Cyprus', 'https://margaritachli.com/blog/dr-chli-margarita/the-lab', 'TBD', ''],
+  'sc': ['Sebastian Scherer', './assets/images/talks/Sebastian-Scherer.jpg', 'Associate Research Professor', 'CMU', 'https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/', 'TBD', ''],
+  'ad': ['Andrew Davison', './assets/images/talks/AndrewDavison.jpg', 'Professor', 'Imperial College London', 'https://www.doc.ic.ac.uk/~ajd/', 'TBD', ''],
   'tbd1': ['TBD', './assets/images/talks/TBD', 'TBD', 'TBD', 'TBD', 'TBD', ''],
   'tbd2': ['TBD', './assets/images/talks/Sebastian-Scherer.jpg', 'Associate Research Professor', 'Carnegie Mellon University', 'https://theairlab.org/team/sebastian/', 'TBD', ''],
-
 }
 
 const organizers_details = [
