@@ -185,7 +185,7 @@ $(document).ready(function () {
           </svg>
         </a-->
         <br>
-        <p>Last updated on: <span id="last-updated"></span> | Page template borrowed from <a target="_blank" href="https://neurl-rmw.github.io/"><span
+        <p>Page template borrowed from <a target="_blank" href="https://neurl-rmw.github.io/"><span
               class="small-caps black-font">NeuRL-RMW</span></a>.</p>
       </div>
     </div>
@@ -200,7 +200,6 @@ $(document).ready(function () {
   });
 
   // Last updated
-  // var apiUrl = "https://api.github.com/repos/NeuRL-RMW/NeuRL-RMW.github.io/commits?sha=main&per_page=1";
   var apiUrl = "https://api.github.com/repos/XingxingZuo/MM-SpatialAI/commits?sha=main&per_page=1";
   $.getJSON(apiUrl, function (data) {
     var commitDate = new Date(data[0].commit.committer.date);
