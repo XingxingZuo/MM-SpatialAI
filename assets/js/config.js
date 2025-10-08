@@ -1,6 +1,6 @@
 const project_name = `Multi-Modal Spatial AI for Robust Navigation and Open-World Understanding `
-const proj_small_caps = `<span class="small-caps">MMSpatialAI Workshop</span>: `
-const conference_details = ['ICRA 2026', 'https://2026.ieee-icra.org/', 'Vinenna, Austria', 'assets/images/icra26_logo.png']
+const proj_small_caps = `<span class="small-caps">MM-SpatialAI Workshop</span>: `
+const conference_details = ['ICRA 2026', 'https://2026.ieee-icra.org/', 'Vienna, Austria', 'assets/images/icra26_logo.png']
 const workshop_date = `TBD, June 1-5, 2026`
 
 const talk_speaker_details = {
