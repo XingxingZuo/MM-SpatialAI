@@ -1,7 +1,7 @@
 const project_name = `Multi-Modal Spatial AI for Robust Navigation and Open-World Understanding `
 const proj_small_caps = `<span class="small-caps">MM-SpatialAI Workshop</span>: `
 const conference_details = ['ICRA 2026', 'https://2026.ieee-icra.org/', 'Vienna, Austria', 'assets/images/icra26_logo.png']
-const workshop_date = `TBD, June 1-5, 2026`
+const workshop_date = `June 1, 2026`
 
 const talk_speaker_details = {
   'aw': ['Alex Wong', './assets/images/talks/alex-wong.jpg', 'Assistant Professor', 'Yale University', 'https://vision.cs.yale.edu/members/alex-wong/', 'TBD', ''],
