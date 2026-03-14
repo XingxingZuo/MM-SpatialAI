@@ -26,7 +26,7 @@ const organizers_details = [
 
 
 const pc_details = [
-  ['Yong Liu', 'assets/images/programcommittee/yongliu.jpg', 'Assistant Professor', 'Zhejiang University', 'https://person.zju.edu.cn/en/yongliu'],
+  ['Yong Liu', 'assets/images/programcommittee/yongliu.jpg', 'Professor', 'Zhejiang University', 'https://person.zju.edu.cn/en/yongliu/'],
   ['Huai Yu', 'assets/images/programcommittee/huaiyu.png', 'Associate Professor', 'Wuhan University', 'https://levenberg.github.io/'],
   ['Tao Li', 'assets/images/programcommittee/taoli.jpg', 'Associate Researcher', 'Zhejiang Univ of Tech.', 'https://scholar.google.com/citations?user=APrTJ5kAAAAJ&hl=zh-CN'],
   ['Jiajun Lv', 'assets/images/programcommittee/jiajunlv.jpg', 'Research Fellow', 'Zhejiang University', 'https://april.zju.edu.cn/team/jiajun-lv/'],
