@@ -108,8 +108,8 @@ $(document).ready(function () {
   populate_people_html('organizer-content-2', organizers_details.slice(3, ))
 
     // programcommittee content
-  populate_people_html('programcommittee-content-1', pc_details.slice(0, 4))
-  // populate_people_html('organizer-content-2', pc_details.slice(3, ))
+  populate_people_html('programcommittee-content-1', pc_details.slice(0, 5))
+  // populate_people_html('organizer-content-2', programcommittee_details.slice(3, ))
 
   // accepted presentations
   populate_accepted_presentations("ppt-list", accepted_presentations)
