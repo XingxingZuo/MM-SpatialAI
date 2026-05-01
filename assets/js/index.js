@@ -109,6 +109,8 @@ $(document).ready(function () {
 
     // programcommittee content
   populate_people_html('programcommittee-content-1', pc_details.slice(0, 5))
+  populate_people_html('programcommittee-content-2', pc_details.slice(5, 10))
+  populate_people_html('programcommittee-content-3', pc_details.slice(10, 13))
   // populate_people_html('organizer-content-2', programcommittee_details.slice(3, ))
 
   // accepted presentations

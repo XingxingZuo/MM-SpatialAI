@@ -31,6 +31,14 @@ const pc_details = [
   ['Chuchu Chen', 'assets/images/programcommittee/chuchuchen.jpg', 'Assistant Professor', 'George Washington University', 'https://www.chuchuchen.net/'],
   ['Tao Li', 'assets/images/programcommittee/taoli.jpg', 'Associate Researcher', 'Zhejiang Univ of Tech.', 'https://scholar.google.com/citations?user=APrTJ5kAAAAJ&hl=zh-CN'],
   ['Jiajun Lv', 'assets/images/programcommittee/jiajunlv.jpg', 'Research Fellow', 'Zhejiang University', 'https://april.zju.edu.cn/team/jiajun-lv/'],
+  ['Qingshan Xu', 'assets/images/programcommittee/QingshanXu.jpg', 'Professor', 'University of Science and Technology of China', 'https://ghixu.github.io/'],
+  ['Yuhang Ming', 'assets/images/programcommittee/YuhangMing.jpg', 'Lecture', 'Hangzhou Dianzi Universtiy', 'https://yuhangming.github.io/'],
+  ['Jikai Wang', 'assets/images/programcommittee/JikaiWang.jpg', 'Associate Researcher', 'University of Science and Technology of China', 'https://www.researchgate.net/profile/Jikai-Wang'],
+  ['Yan Li', 'assets/images/programcommittee/YanLi.jpg', 'Research Fellow', 'National University of  Singapore', 'https://yanyan-li.github.io/'],
+  ['Boying Liu', 'assets/images/programcommittee/BoyingLiu.png', 'Research Fellow', 'Monash University', 'https://leeby68.github.io/'],
+  ['Yixi Cai', 'assets/images/programcommittee/YixiCai.png', 'Postdoctoral Fellow', 'KTH Royal Institute of Technology', 'https://yixicai.com/'],
+  ['Yunfan Ren', 'assets/images/programcommittee/YufanRen.jpg', 'Postdoc', ' University of Zurich', 'https://renyunfan.cn/'],
+  ['Hongjia Zhai', 'assets/images/programcommittee/HongjiaZhai.jpeg', 'Postdoc', 'MBZUAI', 'https://zhaihongjia.github.io/'],
 ]
 
 const accepted_presentations = [
