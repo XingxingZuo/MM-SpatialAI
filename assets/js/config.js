@@ -64,23 +64,86 @@ const org_affiliation_logos = [
 ]
 
 
+const contributed_paper_sessions = {
+  'spot-ppt-1': [
+    ['10:10 - 10:15', 'LAPS: Improving Incremental LiDAR Mapping using Active Pooling and Sampling for Neural Distance Fields', 'https://openreview.net/forum?id=4Gsum6lGKy'],
+    ['10:15 - 10:20', 'FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation', 'https://openreview.net/forum?id=1ZT1RAUORQ'],
+    ['10:20 - 10:25', 'Memory Over Maps: 3D Object Localization Without Reconstruction', 'https://openreview.net/forum?id=BywzZunfTz'],
+    ['10:25 - 10:30', 'Online Adaptive Learning for Robust LiDAR Perception in High-Performance Autonomous Racing', 'https://openreview.net/forum?id=Fn9g3znAy8'],
+  ],
+  'spot-ppt-2': [
+    ['14:30 - 14:35', 'Exploring Bottlenecks in VLM-LLM Navigation: How 3D Scene Understanding Capability Impacts Zero-Shot VLN', 'https://openreview.net/forum?id=x8pDjdRfFs'],
+    ['14:35 - 14:40', 'Efficient Feature-Free Initialization for Monocular Visual-Inertial Systems Using A Feed-Forward 3D Model', 'https://openreview.net/forum?id=efkfNOm4Lx'],
+    ['14:40 - 14:45', 'DCReg: Decoupled Characterization for Efficient Degenerate LiDAR Registration', 'https://openreview.net/forum?id=GcmvDNi6Xa'],
+    ['14:45 - 14:50', 'RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments', 'https://openreview.net/forum?id=kCsobjEkl7'],
+    ['14:50 - 14:55', 'VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots', 'https://openreview.net/forum?id=v8l38pjA5n'],
+    ['14:55 - 15:00', '4D Latent Mapping for Mobile Manipulation Policy Learning', 'https://openreview.net/forum?id=ygM2oi5zDO'],
+    ['15:00 - 15:05', 'FunFact: Building Probabilistic Functional 3D Scene Graphs via Factor-Graph Reasoning', 'https://openreview.net/forum?id=5LlAmwtJeB'],
+    ['15:05 - 15:10', 'Pose-Anchored and Scale-Consistent Dense Mapping with Geometric Priors', 'https://openreview.net/forum?id=TDz3PNI1Le'],
+  ],
+}
 
-// event-alias, time slot, event name, person alias from talk_speaker_details, ppt mode
+
+const coffee_poster_sessions = {
+  'coffee-poster-morning': [
+    'LAPS: Improving Incremental LiDAR Mapping using Active Pooling and Sampling for Neural Distance Fields',
+    'FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation',
+    'Memory Over Maps: 3D Object Localization Without Reconstruction',
+    'Online Adaptive Learning for Robust LiDAR Perception in High-Performance Autonomous Racing',
+    'EgoSpot: Egocentric Multimodal Control for Hands-Free Mobile Manipulation',
+    'Spatial-JEPA: Geometry-Aware Self-Supervised Learning from RGBD via Cross-Attention Fusion',
+    'Unpaired RGB-Thermal Gaussian-Splatting Using Visual Geometric Transformers',
+    'Sign Language: Towards Sign Understanding for Robot Autonomy',
+    'Image-based Geo-localization for Robotics: Are Black-box Vision-Language Models there yet?',
+    'VANG-Planner: Integrating Language Instructions into Spatial Cost for Global Path Planning',
+    'Compact Multi-Agent Gaussian Splatting SLAM',
+    'Caging Vision-Language Navigation for Legged Robots',
+    'Two-Stage Hint–Object Alignment for Text-to-PointCloud Localization',
+    'Towards Lifelong Outdoor Magnetic-Aware SLAM: A Multi-Modal Day-and-Night Geomagnetic Dataset',
+    'From Obstacles to Etiquette: Robot Social Navigation with VLM-Informed Path Selection',
+    'MR-SLAM: Immersive Spatial Supervision for Multi-Robot Mapping via Mixed Reality',
+    'Mind the Domain Gap: Multi-Modal Fusion for Off-road Navigation and Scene Understanding',
+  ],
+  'coffee-poster-afternoon': [
+    'Exploring Bottlenecks in VLM-LLM Navigation: How 3D Scene Understanding Capability Impacts Zero-Shot VLN',
+    'Efficient Feature-Free Initialization for Monocular Visual-Inertial Systems Using A Feed-Forward 3D Model',
+    'DCReg: Decoupled Characterization for Efficient Degenerate LiDAR Registration',
+    'RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments',
+    'VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots',
+    '4D Latent Mapping for Mobile Manipulation Policy Learning',
+    'FunFact: Building Probabilistic Functional 3D Scene Graphs via Factor-Graph Reasoning',
+    'Pose-Anchored and Scale-Consistent Dense Mapping with Geometric Priors',
+    'AgentGrounder: Zero-Shot 3D Visual Pointcloud Grounding using Multimodal Language Models',
+    'Generalizing Visual Proprioception for Multiple Robot Configurations',
+    'Light Field Based 6DoF Tracking of Previously Unobserved Objects',
+    'Learning to Localize Reference Trajectories in Image-Space for Visual Navigation',
+    'Domain Shift-Aware Training-Free Adaptation for Open-Vocabulary Segmentation in Robotic Perception',
+    'ScanNet-SG: A Large-Scale Dataset for 3D Scene Graph Alignment',
+    'Object-Level Change Detection via Semantic Correspondences Association in Multi-Session Mapping',
+    'UniFField: A Generalizable Unified Neural Feature Field for Visual, Semantic, and Spatial Uncertainties in Any Scene',
+    'Metric-Semantic Primitive Matching for Cross-View Robot Localization Beyond Urban Environments',
+  ],
+}
+
+
+// event-alias, time slot, event name, detail alias, ppt mode
 // last two are for inv-talk event-alias entries
 const schedule = [
-  ['intro', '08:30 - 08:40', 'Welcome & Introduction'],
-  ['inv-talk', '08:40 - 09:20', 'Invited Talk', 'hb', 'in-person'],
-  ['inv-talk', '09:20 - 10:00', 'Invited Talk', 'tbd2', 'in-person'],
-  ['coffee-break', '10:00 - 11:00', 'Coffee & <span class="bold has-text-info">Poster Session</span>'],
-  ['inv-talk', '11:00 - 11:40', 'Invited Talk', 'ds', 'in-person'],
-  ['inv-talk', '11:40 - 12:20', 'Invited Talk',  'tbd1', 'in-person'],
-  ['lunch-break', '12:20 - 13:20', 'Lunch Break'],
-  ['inv-talk', '13:20 - 14:00', 'Invited Talk', 'aw', 'in-person'],
-  ['inv-talk', '14:00 - 14:40', 'Invited Talk', 'tm', 'in-person'],
-  ['spot-ppt', '14:40 - 15:20', 'Contributed Paper Session & Poster Lightning Talks'],
-  ['coffee-break', '15:20 - 16:00', 'Coffee & <span class="bold has-text-info">Poster Session</span>'],
-  ['inv-talk', '16:00 - 16:40', 'Invited Talk', 'aw', 'in-person'],
-  ['panel', '16:40 - 17:10', 'Panel Discussion'],
-  ['award', '17:10 - 17:20', 'Award Ceremony'],
-  ['disc', '17:20 - 17:30', 'Conclusions & Closing Remarks'], 
+  ['intro', '09:00 - 09:10', 'Welcome & Introduction'],
+  ['inv-talk', '09:10 - 09:40', 'Invited Talk', 'hb', 'in-person'],
+  ['inv-talk', '09:40 - 10:10', 'Invited Talk', 'tbd2', 'in-person'],
+  ['spot-ppt', '10:10 - 10:30', 'Contributed Paper Session & Poster Lightning Talks 1', 'spot-ppt-1'],
+  ['coffee-break', '10:30 - 11:00', 'Morning Coffee & <span class="bold has-text-info">Poster Session</span>', 'coffee-poster-morning'],
+  ['inv-talk', '11:00 - 11:30', 'Invited Talk', 'ds', 'in-person'],
+  ['inv-talk', '11:30 - 12:00', 'Invited Talk', 'tbd1', 'in-person'],
+  ['inv-talk', '12:00 - 12:30', 'Invited Talk', 'aw', 'in-person'],
+  ['lunch-break', '12:30 - 14:00', 'Lunch Break'],
+  ['inv-talk', '14:00 - 14:30', 'Invited Talk', 'tm', 'in-person'],
+  ['spot-ppt', '14:30 - 15:10', 'Contributed Paper Session & Poster Lightning Talks 2', 'spot-ppt-2'],
+  ['sponsors', '15:10 - 15:30', 'Sponsors & TABxStartups Introductions (6 x ~3 mins)'],
+  ['coffee-break', '15:30 - 16:00', 'Afternoon Coffee & <span class="bold has-text-info">Poster Session</span>', 'coffee-poster-afternoon'],
+  ['inv-talk', '16:00 - 16:30', 'Invited Talk', 'aw', 'in-person'],
+  ['panel', '16:30 - 17:00', 'Panel Discussion'],
+  ['award', '17:00 - 17:20', 'Award Ceremony'],
+  ['disc', '17:20 - 17:30', 'Conclusions & Closing Remarks'],
 ]
