@@ -78,6 +78,20 @@ function populate_accepted_presentations(html_id, details){
 }
 
 
+function populate_paper_title_list(html_id, papers){
+  let content_html = papers.map(paper_title => `<li>${paper_title}</li>`).join(``)
+  $(`#${html_id}`).html(`<ol>${content_html}</ol>`)
+}
+
+
+function populate_timed_paper_link_list(html_id, papers){
+  let content_html = papers.map(paper => `
+    <li><span class="bold">${paper[0]}</span>: ${paper[1]}</li>
+  `).join(``)
+  $(`#${html_id}`).html(`<ol>${content_html}</ol>`)
+}
+
+
 function animate_hidden_content(hidden_content){
   if (hidden_content.is(':visible')) {
     hidden_content.fadeOut();  // If visible, fade out
@@ -115,6 +129,14 @@ $(document).ready(function () {
 
   // accepted presentations
   populate_accepted_presentations("ppt-list", accepted_presentations)
+
+  // contributed paper sessions
+  populate_timed_paper_link_list('spot-ppt-1-list', contributed_paper_sessions['spot-ppt-1'])
+  populate_timed_paper_link_list('spot-ppt-2-list', contributed_paper_sessions['spot-ppt-2'])
+
+  // coffee and poster sessions
+  populate_paper_title_list('coffee-poster-morning-list', coffee_poster_sessions['coffee-poster-morning'])
+  populate_paper_title_list('coffee-poster-afternoon-list', coffee_poster_sessions['coffee-poster-afternoon'])
 
   // organizer affiliation content
   // populate_affiliatons('organizer-affiliation-logo-content', org_affiliation_logos)
@@ -157,12 +179,18 @@ $(document).ready(function () {
       title_abstract_html = ` ${talk_mode}: Keynote Speaker ${keynote_counter} (<span class='toggle-btn has-text-success'>Details</span>)`
       hidden_row_html = `<tr class="hidden-content ${align_left}"><td colspan="2">${title}${abstract}</td></tr>`
     }
+    if (schedule_entry[0] == 'spot-ppt'){
+      title_abstract_html = ` (<a class="has-text-success" href="#${schedule_entry[3]}">Details</a>)`
+    }
     if(['lunch-break', 'coffee-break', 'award'].includes(schedule_entry[0])){
       if (schedule_entry[0] == 'lunch-break'){
         icon_html = `<i class="fas fa-utensils icon" style="position: relative;top: 5px; margin-left:5px"></i>`
       }
       if (schedule_entry[0] == 'coffee-break'){
         icon_html = `<i class="fas fa-coffee icon" style="position: relative;top: 5px; margin-left:5px"></i>`
+        if (schedule_entry[3]){
+          title_abstract_html = `(<a class="has-text-success" href="#${schedule_entry[3]}">Details</a>)`
+        }
       }
       if (schedule_entry[0] == 'award'){
         icon_html = `<i class="fas fa-trophy icon" style="position: relative;top: 5px; margin-left:5px"></i>`
