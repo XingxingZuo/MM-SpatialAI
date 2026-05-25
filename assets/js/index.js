@@ -91,6 +91,27 @@ function populate_timed_paper_link_list(html_id, papers){
   $(`#${html_id}`).html(`<ol>${content_html}</ol>`)
 }
 
+function populate_grouped_timed_company_list(html_id, entries){
+  let content_html = ``
+  let current_group = ``
+
+  entries.forEach(entry => {
+    if (entry[0] != current_group) {
+      if (current_group != ``) {
+        content_html += `</ol>`
+      }
+      current_group = entry[0]
+      content_html += `<h3 class="title is-5 has-text-link mt-5">${current_group}</h3><ol>`
+    }
+    content_html += `<li><span class="bold">${entry[1]}</span>: ${entry[2]}</li>`
+  })
+
+  if (current_group != ``) {
+    content_html += `</ol>`
+  }
+  $(`#${html_id}`).html(content_html)
+}
+
 
 function animate_hidden_content(hidden_content){
   if (hidden_content.is(':visible')) {
@@ -133,6 +154,9 @@ $(document).ready(function () {
   // contributed paper sessions
   populate_timed_paper_link_list('spot-ppt-1-list', contributed_paper_sessions['spot-ppt-1'])
   populate_timed_paper_link_list('spot-ppt-2-list', contributed_paper_sessions['spot-ppt-2'])
+
+  // sponsor and TABxStartups introductions
+  populate_grouped_timed_company_list('sponsor-tabx-introductions-list', sponsor_tabx_introductions)
 
   // coffee and poster sessions
   populate_paper_title_list('coffee-poster-morning-list', coffee_poster_sessions['coffee-poster-morning'])
@@ -180,6 +204,9 @@ $(document).ready(function () {
       hidden_row_html = `<tr class="hidden-content ${align_left}"><td colspan="2">${title}${abstract}</td></tr>`
     }
     if (schedule_entry[0] == 'spot-ppt'){
+      title_abstract_html = ` (<a class="has-text-success" href="#${schedule_entry[3]}">Details</a>)`
+    }
+    if (schedule_entry[0] == 'sponsors'){
       title_abstract_html = ` (<a class="has-text-success" href="#${schedule_entry[3]}">Details</a>)`
     }
     if(['lunch-break', 'coffee-break', 'award'].includes(schedule_entry[0])){

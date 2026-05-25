@@ -125,6 +125,15 @@ const coffee_poster_sessions = {
   ],
 }
 
+const sponsor_tabx_introductions = [
+  ['Sponsors', '15:10 - 15:13', 'Nokov'],
+  ['Sponsors', '15:13 - 15:16', 'AgileX'],
+  ['Sponsors', '15:16 - 15:19', 'DeepMirror'],
+  ['Sponsors', '15:19 - 15:22', 'ATEC'],
+  ['TABxStartups', '15:22 - 15:25', 'SkylandX'],
+  ['TABxStartups', '15:25 - 15:28', 'NeuroDrishti'],
+]
+
 
 // event-alias, time slot, event name, detail alias, ppt mode
 // last two are for inv-talk event-alias entries
@@ -140,7 +149,7 @@ const schedule = [
   ['lunch-break', '12:30 - 14:00', 'Lunch Break'],
   ['inv-talk', '14:00 - 14:30', 'Invited Talk', 'tm', 'in-person'],
   ['spot-ppt', '14:30 - 15:10', 'Contributed Paper Session & Poster Lightning Talks 2', 'spot-ppt-2'],
-  ['sponsors', '15:10 - 15:30', 'Sponsors & TABxStartups Introductions (6 x ~3 mins)'],
+  ['sponsors', '15:10 - 15:30', 'Sponsors & TABxStartups Introductions (6 x ~3 mins)', 'sponsor-tabx-introductions'],
   ['coffee-break', '15:30 - 16:00', 'Afternoon Coffee & <span class="bold has-text-info">Poster Session</span>', 'coffee-poster-afternoon'],
   ['inv-talk', '16:00 - 16:30', 'Invited Talk', 'sc', 'in-person'],
   ['panel', '16:30 - 17:00', 'Panel Discussion'],
