@@ -132,6 +132,7 @@ $(document).ready(function () {
   ${conference_details[2]}</p>
   </a>`)
   $('#workshop-date').html(workshop_date)
+  $('#workshop-room').html(workshop_room)
 
   // talk content
   talk_content = Object.values(talk_speaker_details)
