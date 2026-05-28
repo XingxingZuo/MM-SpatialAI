@@ -1,0 +1,245 @@
+[
+  {
+    "number": 1,
+    "forum": "3EpNJV2TI0",
+    "decision": "Accept (Poster)",
+    "title": "EgoSpot: Egocentric Multimodal Control for Hands-Free Mobile Manipulation",
+    "openreview": "https://openreview.net/forum?id=3EpNJV2TI0",
+    "pdf": "assets/papers/submission-01-egospot-egocentric-multimodal-control-for-hands-free-mobile-manipulation.pdf",
+    "source_pdf": "https://openreview.net/pdf/3d6753cf6a52a61b5df2c8b77185f9ee6feb447e.pdf"
+  },
+  {
+    "number": 3,
+    "forum": "1HBsGM75Mu",
+    "decision": "Accept (Poster)",
+    "title": "Spatial-JEPA: Geometry-Aware Self-Supervised Learning from RGBD via Cross-Attention Fusion",
+    "openreview": "https://openreview.net/forum?id=1HBsGM75Mu",
+    "pdf": "assets/papers/submission-03-spatial-jepa-geometry-aware-self-supervised-learning-from-rgbd-via-cross-attention-fusion.pdf",
+    "source_pdf": "https://openreview.net/pdf/15475482fec237f25c10b3b487c9195249fe0e55.pdf"
+  },
+  {
+    "number": 4,
+    "forum": "2EIloAMhz1",
+    "decision": "Accept (Poster)",
+    "title": "Unpaired RGB-Thermal Gaussian-Splatting Using Visual Geometric Transformers",
+    "openreview": "https://openreview.net/forum?id=2EIloAMhz1",
+    "pdf": "assets/papers/submission-04-unpaired-rgb-thermal-gaussian-splatting-using-visual-geometric-transformers.pdf",
+    "source_pdf": "https://openreview.net/pdf/da2f22a60e72fa24d6830330b666c3f225f61819.pdf"
+  },
+  {
+    "number": 5,
+    "forum": "1ZT1RAUORQ",
+    "decision": "Accept (Oral)",
+    "title": "FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation",
+    "openreview": "https://openreview.net/forum?id=1ZT1RAUORQ",
+    "pdf": "assets/papers/submission-05-flowhoi-flow-based-semantics-grounded-generation-of-hand-object-interactions-for-dexterous.pdf",
+    "source_pdf": "https://openreview.net/pdf/53efd543463b512134d7e61d73c720699c14ca11.pdf"
+  },
+  {
+    "number": 6,
+    "forum": "kaVBOxi9Mh",
+    "decision": "Accept (Poster)",
+    "title": "Sign Language: Towards Sign Understanding for Robot Autonomy",
+    "openreview": "https://openreview.net/forum?id=kaVBOxi9Mh",
+    "pdf": "assets/papers/submission-06-sign-language-towards-sign-understanding-for-robot-autonomy.pdf",
+    "source_pdf": "https://openreview.net/pdf/dfb148a84f0a500bb70ca6aa66a8a30d05066fa2.pdf"
+  },
+  {
+    "number": 7,
+    "forum": "YitkUfy9Gg",
+    "decision": "Accept (Poster)",
+    "title": "Image-based Geo-localization for Robotics: Are Black-box Vision-Language Models there yet?",
+    "openreview": "https://openreview.net/forum?id=YitkUfy9Gg",
+    "pdf": "assets/papers/submission-07-image-based-geo-localization-for-robotics-are-black-box-vision-language-models-there-yet.pdf",
+    "source_pdf": "https://openreview.net/pdf/83aa8a4e528f8231222b1f8af380185732696cca.pdf"
+  },
+  {
+    "number": 8,
+    "forum": "ThYIuv9cS0",
+    "decision": "Accept (Poster)",
+    "title": "VANG-Planner: Integrating Language Instructions into Spatial Cost for Global Path Planning",
+    "openreview": "https://openreview.net/forum?id=ThYIuv9cS0",
+    "pdf": "assets/papers/submission-08-vang-planner-integrating-language-instructions-into-spatial-cost-for-global-path-planning.pdf",
+    "source_pdf": "https://openreview.net/pdf/565d0a408378af3596d1a209b67649aca48bca72.pdf"
+  },
+  {
+    "number": 10,
+    "forum": "BywzZunfTz",
+    "decision": "Accept (Oral)",
+    "title": "Memory Over Maps: 3D Object Localization Without Reconstruction",
+    "openreview": "https://openreview.net/forum?id=BywzZunfTz",
+    "pdf": "assets/papers/submission-10-memory-over-maps-3d-object-localization-without-reconstruction.pdf",
+    "source_pdf": "https://openreview.net/pdf/8ddc271c6f3077018d6f7b951f7e177ab1c0a7ad.pdf"
+  },
+  {
+    "number": 12,
+    "forum": "Fn9g3znAy8",
+    "decision": "Accept (Oral)",
+    "title": "Online Adaptive Learning for Robust LiDAR Perception in High-Performance Autonomous Racing",
+    "openreview": "https://openreview.net/forum?id=Fn9g3znAy8",
+    "pdf": "assets/papers/submission-12-online-adaptive-learning-for-robust-lidar-perception-in-high-performance-autonomous-racing.pdf",
+    "source_pdf": "https://openreview.net/pdf/6013b31ab30d93cdffd2db328a959911c7c4dd98.pdf"
+  },
+  {
+    "number": 13,
+    "forum": "rpfYglueV1",
+    "decision": "Accept (Poster)",
+    "title": "Compact Multi-Agent Gaussian Splatting SLAM",
+    "openreview": "https://openreview.net/forum?id=rpfYglueV1",
+    "pdf": "assets/papers/submission-13-compact-multi-agent-gaussian-splatting-slam.pdf",
+    "source_pdf": "https://openreview.net/pdf/eb849b74035f4217d12768d5145424eb712c8b83.pdf"
+  },
+  {
+    "number": 15,
+    "forum": "kKhoChz5rt",
+    "decision": "Accept (Poster)",
+    "title": "Two-Stage Hint\u2013Object Alignment for Text-to-PointCloud Localization",
+    "openreview": "https://openreview.net/forum?id=kKhoChz5rt",
+    "pdf": "assets/papers/submission-15-two-stage-hint-object-alignment-for-text-to-pointcloud-localization.pdf",
+    "source_pdf": "https://openreview.net/pdf/d4e7d75d45d32c8352a6eb3244d37fda351e5d6d.pdf"
+  },
+  {
+    "number": 18,
+    "forum": "x8pDjdRfFs",
+    "decision": "Accept (Oral)",
+    "title": "Exploring Bottlenecks in VLM-LLM Navigation: How 3D Scene Understanding Capability Impacts Zero-Shot VLN",
+    "openreview": "https://openreview.net/forum?id=x8pDjdRfFs",
+    "pdf": "assets/papers/submission-18-exploring-bottlenecks-in-vlm-llm-navigation-how-3d-scene-understanding-capability-impacts.pdf",
+    "source_pdf": "https://openreview.net/pdf/2823fd425e3286235beaf5d9ab0082946f89e41e.pdf"
+  },
+  {
+    "number": 20,
+    "forum": "efkfNOm4Lx",
+    "decision": "Accept (Oral)",
+    "title": "Efficient Feature-Free Initialization for Monocular Visual-Inertial Systems Using a Feed-Forward 3D Model",
+    "openreview": "https://openreview.net/forum?id=efkfNOm4Lx",
+    "pdf": "assets/papers/submission-20-efficient-feature-free-initialization-for-monocular-visual-inertial-systems-using-a-feed-f.pdf",
+    "source_pdf": "https://openreview.net/pdf/3381281dba4bbafc5b5c3e58fa24e8bd9717e06d.pdf"
+  },
+  {
+    "number": 21,
+    "forum": "KwwkyG9BDz",
+    "decision": "Accept (Poster)",
+    "title": "MR-SLAM: Immersive Spatial Supervision for Multi-Robot Mapping via Mixed Reality",
+    "openreview": "https://openreview.net/forum?id=KwwkyG9BDz",
+    "pdf": "assets/papers/submission-21-mr-slam-immersive-spatial-supervision-for-multi-robot-mapping-via-mixed-reality.pdf",
+    "source_pdf": "https://openreview.net/pdf/de72b5d39c8197078b551c1c3180bec6b2a2b03c.pdf"
+  },
+  {
+    "number": 23,
+    "forum": "kCsobjEkl7",
+    "decision": "Accept (Oral)",
+    "title": "RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments",
+    "openreview": "https://openreview.net/forum?id=kCsobjEkl7",
+    "pdf": "assets/papers/submission-23-radio-vipe-online-tightly-coupled-multi-modal-fusion-for-open-vocabulary-semantic-slam-in.pdf",
+    "source_pdf": "https://openreview.net/pdf/013d326fc1169486847e28eda26426ad2635a2d1.pdf"
+  },
+  {
+    "number": 25,
+    "forum": "BJ8bOGzO6B",
+    "decision": "Accept (Poster)",
+    "title": "Mind the Domain Gap: Multi-Modal Fusion for Off-road Navigation and Scene Understanding",
+    "openreview": "https://openreview.net/forum?id=BJ8bOGzO6B",
+    "pdf": "assets/papers/submission-25-mind-the-domain-gap-multi-modal-fusion-for-off-road-navigation-and-scene-understanding.pdf",
+    "source_pdf": "https://openreview.net/pdf/4ed6792532478f04e6f0c2e4b63a138e123156c0.pdf"
+  },
+  {
+    "number": 26,
+    "forum": "v8l38pjA5n",
+    "decision": "Accept (Oral)",
+    "title": "VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots",
+    "openreview": "https://openreview.net/forum?id=v8l38pjA5n",
+    "pdf": "assets/papers/submission-26-vla-rail-a-real-time-asynchronous-inference-linker-for-vla-models-and-robots.pdf",
+    "source_pdf": "https://openreview.net/pdf/36495bfd0fd3ceeaf87f65deed40a8029613dffe.pdf"
+  },
+  {
+    "number": 27,
+    "forum": "sObDHZPSVM",
+    "decision": "Accept (Poster)",
+    "title": "AgentGrounder: Zero-Shot 3D Visual Pointcloud Grounding using Multimodal Language Models",
+    "openreview": "https://openreview.net/forum?id=sObDHZPSVM",
+    "pdf": "assets/papers/submission-27-agentgrounder-zero-shot-3d-visual-pointcloud-grounding-using-multimodal-language-models.pdf",
+    "source_pdf": "https://openreview.net/pdf/2a8d1caf558edbdb989ed54e7e3afa6cece79a92.pdf"
+  },
+  {
+    "number": 28,
+    "forum": "kgIMR9k5VH",
+    "decision": "Accept (Poster)",
+    "title": "Generalizing Visual Proprioception for Multiple Robot Configurations",
+    "openreview": "https://openreview.net/forum?id=kgIMR9k5VH",
+    "pdf": "assets/papers/submission-28-generalizing-visual-proprioception-for-multiple-robot-configurations.pdf",
+    "source_pdf": "https://openreview.net/pdf/0c1ed9d9858d2314319d9d901855ec192df2fde7.pdf"
+  },
+  {
+    "number": 29,
+    "forum": "d8VAfNmMhk",
+    "decision": "Accept (Poster)",
+    "title": "Light Field Based 6DoF Tracking of Previously Unobserved Objects",
+    "openreview": "https://openreview.net/forum?id=d8VAfNmMhk",
+    "pdf": "assets/papers/submission-29-light-field-based-6dof-tracking-of-previously-unobserved-objects.pdf",
+    "source_pdf": "https://openreview.net/pdf/07b51abbe30d42ebd3fc7b3ba930cb2b180f798b.pdf"
+  },
+  {
+    "number": 32,
+    "forum": "yLLI0uHyaz",
+    "decision": "Accept (Poster)",
+    "title": "Learning to Localize Reference Trajectories in Image-Space for Visual Navigation",
+    "openreview": "https://openreview.net/forum?id=yLLI0uHyaz",
+    "pdf": "assets/papers/submission-32-learning-to-localize-reference-trajectories-in-image-space-for-visual-navigation.pdf",
+    "source_pdf": "https://openreview.net/pdf/11e4a766464a8d7a1467c3de49b2243ede64d85f.pdf"
+  },
+  {
+    "number": 33,
+    "forum": "ygM2oi5zDO",
+    "decision": "Accept (Oral)",
+    "title": "4D Latent Mapping for Mobile Manipulation Policy Learning",
+    "openreview": "https://openreview.net/forum?id=ygM2oi5zDO",
+    "pdf": "assets/papers/submission-33-4d-latent-mapping-for-mobile-manipulation-policy-learning.pdf",
+    "source_pdf": "https://openreview.net/pdf/d6f7a7e039d9b6d5ab948ad5aefd3672c3788147.pdf"
+  },
+  {
+    "number": 34,
+    "forum": "IZE75kBOni",
+    "decision": "Accept (Poster)",
+    "title": "Domain Shift-Aware Training-Free Adaptation for Open-Vocabulary Segmentation in Robotic Perception",
+    "openreview": "https://openreview.net/forum?id=IZE75kBOni",
+    "pdf": "assets/papers/submission-34-domain-shift-aware-training-free-adaptation-for-open-vocabulary-segmentation-in-robotic-pe.pdf",
+    "source_pdf": "https://openreview.net/pdf/8ef0dcd3f65461040b23172ce40f1ee25f218fc8.pdf"
+  },
+  {
+    "number": 36,
+    "forum": "oX3IFluOce",
+    "decision": "Accept (Poster)",
+    "title": "ScanNet-SG: A Large-Scale Dataset for 3D Scene Graph Alignment",
+    "openreview": "https://openreview.net/forum?id=oX3IFluOce",
+    "pdf": "assets/papers/submission-36-scannet-sg-a-large-scale-dataset-for-3d-scene-graph-alignment.pdf",
+    "source_pdf": "https://openreview.net/pdf/cdf650c4f089fce1ff4e7cf1ac565536f434d503.pdf"
+  },
+  {
+    "number": 39,
+    "forum": "jgxMfZ3L3C",
+    "decision": "Accept (Poster)",
+    "title": "Object-Level Change Detection via Semantic Correspondences Association in Multi-Session Mapping",
+    "openreview": "https://openreview.net/forum?id=jgxMfZ3L3C",
+    "pdf": "assets/papers/submission-39-object-level-change-detection-via-semantic-correspondences-association-in-multi-session-ma.pdf",
+    "source_pdf": "https://openreview.net/pdf/eb198a0cf582fe664cbe2539202ab402979f460a.pdf"
+  },
+  {
+    "number": 42,
+    "forum": "TDz3PNI1Le",
+    "decision": "Accept (Oral)",
+    "title": "Pose-Anchored and Scale-Consistent Dense Mapping with Geometric Priors",
+    "openreview": "https://openreview.net/forum?id=TDz3PNI1Le",
+    "pdf": "assets/papers/submission-42-pose-anchored-and-scale-consistent-dense-mapping-with-geometric-priors.pdf",
+    "source_pdf": "https://openreview.net/pdf/1e7932cf0e67b08db4e3d3a28e36c00418f11c93.pdf"
+  },
+  {
+    "number": 44,
+    "forum": "nRpxnXF0VQ",
+    "decision": "Accept (Poster)",
+    "title": "Metric-Semantic Primitive Matching for Cross-View Robot Localization Beyond Urban Environments",
+    "openreview": "https://openreview.net/forum?id=nRpxnXF0VQ",
+    "pdf": "assets/papers/submission-44-metric-semantic-primitive-matching-for-cross-view-robot-localization-beyond-urban-environm.pdf",
+    "source_pdf": "https://openreview.net/pdf/167bf2ce9c4b24301b455ed3a61208a5e1d1a06a.pdf"
+  }
+]

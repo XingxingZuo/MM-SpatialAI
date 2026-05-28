@@ -14,7 +14,7 @@ function populate_people_html(html_id, details, row_split_idx){
           <div> 
             <a href="${detail[4]}" target="_blank">${detail[0]}</a> <br>
             ${detail[2]} <br>
-            ${detail[3]} 
+            ${detail[3]}
           </div>
         </div>
       </div>`
@@ -78,15 +78,45 @@ function populate_accepted_presentations(html_id, details){
 }
 
 
+function render_paper_link(title, url){
+  if (url) {
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a>`
+  }
+  return title
+}
+
+function find_contributed_paper_url(title){
+  const sessions = Object.values(contributed_paper_sessions || {})
+  for (let session of sessions) {
+    const paper = session.find(entry => entry[1] == title && entry[2])
+    if (paper) {
+      return paper[2]
+    }
+  }
+  return ``
+}
+
+function render_talk_detail(label, text){
+  if (text) {
+    return `<p><span class="bold">${label}.</span> ${text}</p>`
+  }
+  return ``
+}
+
 function populate_paper_title_list(html_id, papers){
-  let content_html = papers.map(paper_title => `<li>${paper_title}</li>`).join(``)
+  let content_html = papers.map(paper => {
+    if (Array.isArray(paper)) {
+      return `<li>${render_paper_link(paper[0], paper[1])}</li>`
+    }
+    return `<li>${render_paper_link(paper, find_contributed_paper_url(paper))}</li>`
+  }).join(``)
   $(`#${html_id}`).html(`<ol>${content_html}</ol>`)
 }
 
 
 function populate_timed_paper_link_list(html_id, papers){
   let content_html = papers.map(paper => `
-    <li><span class="bold">${paper[0]}</span>: ${paper[1]}</li>
+    <li><span class="bold">${paper[0]}</span>: ${render_paper_link(paper[1], paper[2])}</li>
   `).join(``)
   $(`#${html_id}`).html(`<ol>${content_html}</ol>`)
 }
@@ -191,6 +221,8 @@ $(document).ready(function () {
     let hidden_row_html = ``
     let title = ``
     let abstract = ``
+    let bio = ``
+    let details = ``
     let talk_mode = ``
     let align_left = ``
 
@@ -198,11 +230,13 @@ $(document).ready(function () {
       keynote_counter++;
       speaker_details = talk_speaker_details[schedule_entry[3]]
       talk_mode = schedule_entry[4] == 'online' ? `<span class='has-text-danger bold'>[Online]</span>` : ``
-      align_left = (speaker_details[5] != `` && speaker_details[6] != ``) ? "align-left" : ""
-      title = speaker_details[5] != `` ? `<h5 class="center has-text-success bold">${speaker_details[5]}</h5>` : ``
-      abstract = speaker_details[6] != `` ? `<p><span class="bold">Abstract.</span> ${speaker_details[6]}</p>` : `<p class="center">Details coming soon. Thanks for your patience.</p>`
+      title = speaker_details[5] ? `<h5 class="center has-text-success bold">${speaker_details[5]}</h5>` : ``
+      abstract = render_talk_detail('Abstract', speaker_details[6])
+      bio = render_talk_detail('Bio', speaker_details[7])
+      details = title || abstract || bio ? `${title}${abstract}${bio}` : `<p class="center">Details coming soon. Thanks for your patience.</p>`
+      align_left = title || abstract || bio ? "align-left" : ""
       title_abstract_html = ` ${talk_mode} ${keynote_counter}: ${speaker_details[0]} (<span class='toggle-btn has-text-success'>Details</span>)`
-      hidden_row_html = `<tr class="hidden-content ${align_left}"><td colspan="2">${title}${abstract}</td></tr>`
+      hidden_row_html = `<tr class="hidden-content ${align_left}"><td colspan="2">${details}</td></tr>`
     }
     if (schedule_entry[0] == 'spot-ppt'){
       title_abstract_html = ` (<a class="has-text-success" href="#${schedule_entry[3]}">Details</a>)`
