@@ -186,8 +186,8 @@ $(document).ready(function () {
   populate_timed_paper_link_list('spot-ppt-1-list', contributed_paper_sessions['spot-ppt-1'])
   populate_timed_paper_link_list('spot-ppt-2-list', contributed_paper_sessions['spot-ppt-2'])
 
-  // sponsor and TABxStartups introductions
-  populate_grouped_timed_company_list('sponsor-tabx-introductions-list', sponsor_tabx_introductions)
+  // sponsor introductions
+  populate_grouped_timed_company_list('sponsor-introductions-list', sponsor_introductions)
 
   // coffee and poster sessions
   populate_paper_title_list('coffee-poster-morning-list', coffee_poster_sessions['coffee-poster-morning'])

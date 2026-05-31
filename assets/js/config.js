@@ -125,12 +125,11 @@ const coffee_poster_sessions = {
   ],
 }
 
-const sponsor_tabx_introductions = [
-  ['Sponsors', '15:10 - 15:14', 'Nokov'],
-  ['Sponsors', '15:14 - 15:18', 'AgileX'],
-  ['Sponsors', '15:18 - 15:22', 'DeepMirror'],
-  ['Sponsors', '15:22 - 15:26', 'ATEC'],
-  ['TABxStartups', '15:26 - 15:30', 'NeuroDrishti'],
+const sponsor_introductions = [
+  ['Sponsors', '15:10 - 15:15', 'Nokov'],
+  ['Sponsors', '15:15 - 15:20', 'AgileX'],
+  ['Sponsors', '15:20 - 15:25', 'DeepMirror'],
+  ['Sponsors', '15:25 - 15:30', 'ATEC'],
 ]
 
 
@@ -148,7 +147,7 @@ const schedule = [
   ['lunch-break', '12:30 - 14:00', 'Lunch Break'],
   ['inv-talk', '14:00 - 14:30', 'Invited Talk', 'tm', 'in-person'],
   ['spot-ppt', '14:30 - 15:10', 'Contributed Paper Session & Oral Talks 2', 'spot-ppt-2'],
-  ['sponsors', '15:10 - 15:30', 'Sponsors & TABxStartups Introductions (5 x ~4 mins)', 'sponsor-tabx-introductions'],
+  ['sponsors', '15:10 - 15:30', 'Sponsor Introductions (4 x 5 mins)', 'sponsor-introductions'],
   ['coffee-break', '15:30 - 16:00', 'Afternoon Coffee & <span class="bold has-text-info">Poster Session</span>', 'coffee-poster-afternoon'],
   ['inv-talk', '16:00 - 16:30', 'Invited Talk', 'sc', 'in-person'],
   ['panel', '16:30 - 17:00', 'Panel Discussion'],
