@@ -68,13 +68,13 @@ const org_affiliation_logos = [
 const contributed_paper_sessions = {
   'spot-ppt-1': [
     ['10:10 - 10:15', 'LAPS: Improving Incremental LiDAR Mapping using Active Pooling and Sampling for Neural Distance Fields', ''],
-    ['10:15 - 10:20', 'FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation', 'assets/papers/submission-05-flowhoi-flow-based-semantics-grounded-generation-of-hand-object-interactions-for-dexterous.pdf'],
+    ['10:15 - 10:20', 'Efficient Feature-Free Initialization for Monocular Visual-Inertial Systems Using A Feed-Forward 3D Model', 'assets/papers/submission-20-efficient-feature-free-initialization-for-monocular-visual-inertial-systems-using-a-feed-f.pdf'],
     ['10:20 - 10:25', 'Memory Over Maps: 3D Object Localization Without Reconstruction', 'assets/papers/submission-10-memory-over-maps-3d-object-localization-without-reconstruction.pdf'],
     ['10:25 - 10:30', 'Online Adaptive Learning for Robust LiDAR Perception in High-Performance Autonomous Racing', 'assets/papers/submission-12-online-adaptive-learning-for-robust-lidar-perception-in-high-performance-autonomous-racing.pdf'],
   ],
   'spot-ppt-2': [
     ['14:30 - 14:35', 'Exploring Bottlenecks in VLM-LLM Navigation: How 3D Scene Understanding Capability Impacts Zero-Shot VLN', 'assets/papers/submission-18-exploring-bottlenecks-in-vlm-llm-navigation-how-3d-scene-understanding-capability-impacts.pdf'],
-    ['14:35 - 14:40', 'Efficient Feature-Free Initialization for Monocular Visual-Inertial Systems Using A Feed-Forward 3D Model', 'assets/papers/submission-20-efficient-feature-free-initialization-for-monocular-visual-inertial-systems-using-a-feed-f.pdf'],
+    ['14:35 - 14:40', 'FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation', 'assets/papers/submission-05-flowhoi-flow-based-semantics-grounded-generation-of-hand-object-interactions-for-dexterous.pdf'],
     ['14:40 - 14:45', 'DCReg: Decoupled Characterization for Efficient Degenerate LiDAR Registration', ''],
     ['14:45 - 14:50', 'RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments', 'assets/papers/submission-23-radio-vipe-online-tightly-coupled-multi-modal-fusion-for-open-vocabulary-semantic-slam-in.pdf'],
     ['14:50 - 14:55', 'VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots', 'assets/papers/submission-26-vla-rail-a-real-time-asynchronous-inference-linker-for-vla-models-and-robots.pdf'],
@@ -88,7 +88,7 @@ const contributed_paper_sessions = {
 const coffee_poster_sessions = {
   'coffee-poster-morning': [
     ['LAPS: Improving Incremental LiDAR Mapping using Active Pooling and Sampling for Neural Distance Fields', ''],
-    ['FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation', 'assets/papers/submission-05-flowhoi-flow-based-semantics-grounded-generation-of-hand-object-interactions-for-dexterous.pdf'],
+    ['Efficient Feature-Free Initialization for Monocular Visual-Inertial Systems Using A Feed-Forward 3D Model', 'assets/papers/submission-20-efficient-feature-free-initialization-for-monocular-visual-inertial-systems-using-a-feed-f.pdf'],
     ['Memory Over Maps: 3D Object Localization Without Reconstruction', 'assets/papers/submission-10-memory-over-maps-3d-object-localization-without-reconstruction.pdf'],
     ['Online Adaptive Learning for Robust LiDAR Perception in High-Performance Autonomous Racing', 'assets/papers/submission-12-online-adaptive-learning-for-robust-lidar-perception-in-high-performance-autonomous-racing.pdf'],
     ['EgoSpot: Egocentric Multimodal Control for Hands-Free Mobile Manipulation', 'assets/papers/submission-01-egospot-egocentric-multimodal-control-for-hands-free-mobile-manipulation.pdf'],
@@ -106,7 +106,7 @@ const coffee_poster_sessions = {
   ],
   'coffee-poster-afternoon': [
     ['Exploring Bottlenecks in VLM-LLM Navigation: How 3D Scene Understanding Capability Impacts Zero-Shot VLN', 'assets/papers/submission-18-exploring-bottlenecks-in-vlm-llm-navigation-how-3d-scene-understanding-capability-impacts.pdf'],
-    ['Efficient Feature-Free Initialization for Monocular Visual-Inertial Systems Using A Feed-Forward 3D Model', 'assets/papers/submission-20-efficient-feature-free-initialization-for-monocular-visual-inertial-systems-using-a-feed-f.pdf'],
+    ['FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation', 'assets/papers/submission-05-flowhoi-flow-based-semantics-grounded-generation-of-hand-object-interactions-for-dexterous.pdf'],
     ['DCReg: Decoupled Characterization for Efficient Degenerate LiDAR Registration', ''],
     ['RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments', 'assets/papers/submission-23-radio-vipe-online-tightly-coupled-multi-modal-fusion-for-open-vocabulary-semantic-slam-in.pdf'],
     ['VLA-RAIL: A Real-Time Asynchronous Inference Linker for VLA Models and Robots', 'assets/papers/submission-26-vla-rail-a-real-time-asynchronous-inference-linker-for-vla-models-and-robots.pdf'],
