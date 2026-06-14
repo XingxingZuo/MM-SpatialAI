@@ -24,21 +24,6 @@ function populate_people_html(html_id, details, row_split_idx){
     // $(`#${html_id}`).html($(`#${html_id}`).html() + content_html)
 }
 
-function populate_affiliatons(html_id, details){
-  // content
-  let content_html = ``
-  for(var i=0; i<details.length; i++) {
-    let detail = details[i]
-    content_html += `
-    <div class="column">
-      <div class="center">
-        <img class="${html_id}-image center" src="${detail}">
-      </div>
-    </div>`
-  }
-  $(`#${html_id}`).html(content_html)
-}
-
 
 function populate_gallery(html_id, photos){
   let content_html = ``
@@ -53,44 +38,6 @@ function populate_gallery(html_id, photos){
         <figcaption class="gallery-caption has-text-centered">${photo[1]}</figcaption>
       </figure>
     </div>`
-  }
-  $(`#${html_id}`).html(content_html)
-}
-
-
-function populate_accepted_presentations(html_id, details){
-  // content
-  let content_html = ``
-  let spotlight_tag_html = ``
-  let curr_detail = null
-
-  for(var i=0; i<details.length; i++) {
-    curr_detail = details[i]
-    spotlight_tag_html = ``
-    if(curr_detail[7] == "Spotlight"){
-      spotlight_tag_html = `<span class="tag is-warning">${curr_detail[7]}</span>`
-    }
-    content_html += `
-    <article class="media">
-      <figure class="media-left">
-        <p class="image is-64x64">
-          <img class="is-rounded" src="${curr_detail[2]}">
-        </p>
-      </figure>
-      <div class="media-content">
-        <div class="content">
-          <p>
-            <a href="${curr_detail[1]}" target="_blank"><strong>${curr_detail[0]}</strong></a>&nbsp;${spotlight_tag_html}
-            <br>
-            ${curr_detail[3]}, ${curr_detail[4]}
-            <br>
-            <small class='bold has-text-dark'><i class='fa fa-clock icon'  style="position: relative;top: 5px;"></i>&nbsp;${curr_detail[8]} | <span class='toggle-btn has-text-primary'>${curr_detail[5]}</span>
-            <span class="hidden-content unbold"><br><span class='bold'>Abstract.</span> ${curr_detail[6]}</span>
-            </small>
-          </p>
-        </div>
-      </div>
-    </article>`
   }
   $(`#${html_id}`).html(content_html)
 }
@@ -197,8 +144,6 @@ $(document).ready(function () {
   populate_people_html('programcommittee-content-3', pc_details.slice(10, 13))
   // populate_people_html('organizer-content-2', programcommittee_details.slice(3, ))
 
-  // accepted presentations
-  populate_accepted_presentations("ppt-list", accepted_presentations)
 
   // contributed paper sessions
   populate_timed_paper_link_list('spot-ppt-1-list', contributed_paper_sessions['spot-ppt-1'])
@@ -213,10 +158,6 @@ $(document).ready(function () {
   // coffee and poster sessions
   populate_paper_title_list('coffee-poster-morning-list', coffee_poster_sessions['coffee-poster-morning'])
   populate_paper_title_list('coffee-poster-afternoon-list', coffee_poster_sessions['coffee-poster-afternoon'])
-
-  // organizer affiliation content
-  // populate_affiliatons('organizer-affiliation-logo-content', org_affiliation_logos)
-
 
 
   // const schedule = [
