@@ -118,7 +118,8 @@ const gallery_photos = [
   ['assets/images/gallery/10-panel-discussion.jpeg', 'Panel Discussion'],
   ['assets/images/gallery/11-best-paper-finalist.jpeg', 'Best Paper Award Finalist'],
   ['assets/images/gallery/12-best-paper-award.jpeg', 'Best Paper Award'],
-  ['assets/images/gallery/13-group-photo.jpeg', 'Organizers & Speakers'],
+  ['assets/images/gallery/13-closing-remarks.jpeg', 'Closing remarks by Guoquan Huang'],
+  ['assets/images/gallery/14-group-photo.jpeg', 'Organizers & Speakers'],
 ]
 
 const sponsor_introductions = [

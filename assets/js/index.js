@@ -149,8 +149,8 @@ $(document).ready(function () {
   populate_timed_paper_link_list('spot-ppt-1-list', contributed_paper_sessions['spot-ppt-1'])
   populate_timed_paper_link_list('spot-ppt-2-list', contributed_paper_sessions['spot-ppt-2'])
 
-  // sponsor introductions
-  populate_grouped_timed_company_list('sponsor-introductions-list', sponsor_introductions)
+  // sponsor introductions (section commented out in index.html)
+  // populate_grouped_timed_company_list('sponsor-introductions-list', sponsor_introductions)
 
   // gallery
   populate_gallery('gallery-content', gallery_photos)
@@ -204,7 +204,10 @@ $(document).ready(function () {
       title_abstract_html = ` (<a class="has-text-success" href="#${schedule_entry[3]}">Details</a>)`
     }
     if (schedule_entry[0] == 'sponsors'){
-      title_abstract_html = ` (<a class="has-text-success" href="#${schedule_entry[3]}">Details</a>)`
+      // inline expandable details (like invited talks), listing each sponsor's slot
+      let sponsor_items = sponsor_introductions.map(entry => `<li><span class="bold">${entry[1]}</span>: ${entry[2]}</li>`).join(``)
+      title_abstract_html = ` (<span class='toggle-btn has-text-success'>Details</span>)`
+      hidden_row_html = `<tr class="hidden-content align-left"><td colspan="3"><ol>${sponsor_items}</ol></td></tr>`
     }
     if(['lunch-break', 'coffee-break', 'award'].includes(schedule_entry[0])){
       if (schedule_entry[0] == 'lunch-break'){
