@@ -40,6 +40,24 @@ function populate_affiliatons(html_id, details){
 }
 
 
+function populate_gallery(html_id, photos){
+  let content_html = ``
+  for(var i=0; i<photos.length; i++) {
+    let photo = photos[i]
+    content_html += `
+    <div class="column is-one-third">
+      <figure class="image gallery-figure">
+        <a href="${photo[0]}" target="_blank" rel="noopener noreferrer">
+          <img class="gallery-image" src="${photo[0]}" alt="${photo[1]}" loading="lazy">
+        </a>
+        <figcaption class="gallery-caption has-text-centered">${photo[1]}</figcaption>
+      </figure>
+    </div>`
+  }
+  $(`#${html_id}`).html(content_html)
+}
+
+
 function populate_accepted_presentations(html_id, details){
   // content
   let content_html = ``
@@ -189,6 +207,9 @@ $(document).ready(function () {
   // sponsor introductions
   populate_grouped_timed_company_list('sponsor-introductions-list', sponsor_introductions)
 
+  // gallery
+  populate_gallery('gallery-content', gallery_photos)
+
   // coffee and poster sessions
   populate_paper_title_list('coffee-poster-morning-list', coffee_poster_sessions['coffee-poster-morning'])
   populate_paper_title_list('coffee-poster-afternoon-list', coffee_poster_sessions['coffee-poster-afternoon'])
@@ -236,7 +257,7 @@ $(document).ready(function () {
       details = title || abstract || bio ? `${title}${abstract}${bio}` : `<p class="center">Details coming soon. Thanks for your patience.</p>`
       align_left = title || abstract || bio ? "align-left" : ""
       title_abstract_html = ` ${talk_mode} ${keynote_counter}: ${speaker_details[0]} (<span class='toggle-btn has-text-success'>Details</span>)`
-      hidden_row_html = `<tr class="hidden-content ${align_left}"><td colspan="2">${details}</td></tr>`
+      hidden_row_html = `<tr class="hidden-content ${align_left}"><td colspan="3">${details}</td></tr>`
     }
     if (schedule_entry[0] == 'spot-ppt'){
       title_abstract_html = ` (<a class="has-text-success" href="#${schedule_entry[3]}">Details</a>)`
@@ -259,9 +280,18 @@ $(document).ready(function () {
       }
     effect = `notification is-warning is-light`
     }
+
+    // recording chapter link: opening + invited talks that appear in the video
+    let recording_key = schedule_entry[0] == 'inv-talk' ? schedule_entry[3]
+                      : schedule_entry[0] == 'intro' ? 'intro' : ``
+    let recording_html = ``
+    if (recording_key && recording_timestamps.hasOwnProperty(recording_key)) {
+      recording_html = `<a class="has-text-danger bold" href="${workshop_recording}&t=${recording_timestamps[recording_key]}s" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube icon" style="position: relative; top: 4px;"></i>&nbsp;Watch</a>`
+    }
+
     schedule_html += `
       <tr class="${effect}">
-        <td>${schedule_entry[1]}</td><td>${schedule_entry[2]}${icon_html} ${title_abstract_html}</td>
+        <td>${schedule_entry[1]}</td><td>${schedule_entry[2]}${icon_html} ${title_abstract_html}</td><td class="has-text-centered">${recording_html}</td>
       </tr>
       ${hidden_row_html}`
   });

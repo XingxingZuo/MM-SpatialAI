@@ -125,6 +125,23 @@ const coffee_poster_sessions = {
   ],
 }
 
+// [image path, caption]
+const gallery_photos = [
+  ['assets/images/gallery/01-opening-session.jpeg', 'Opening of the MM-SpatialAI Workshop'],
+  ['assets/images/gallery/02-welcome-remarks-xingxing-zuo.jpeg', 'Welcome remarks by Xingxing Zuo'],
+  ['assets/images/gallery/03-keynote-andrew-davison.jpg', 'Keynote: Andrew Davison'],
+  ['assets/images/gallery/04-keynote-dezhen-song.jpeg', 'Keynote: Dezhen Song'],
+  ['assets/images/gallery/05-keynote-margarita-chli.jpeg', 'Keynote: Margarita Chli'],
+  ['assets/images/gallery/06-keynote-alex-wong.jpeg', 'Keynote: Alex Wong'],
+  ['assets/images/gallery/07-keynote-hermann-blum.jpeg', 'Keynote: Hermann Blum'],
+  ['assets/images/gallery/08-keynote-timothy-barfoot.jpg', 'Keynote: Timothy D. Barfoot'],
+  ['assets/images/gallery/09-keynote-sebastian-scherer.jpeg', 'Keynote: Sebastian Scherer'],
+  ['assets/images/gallery/10-panel-discussion.jpeg', 'Panel Discussion'],
+  ['assets/images/gallery/11-best-paper-finalist.jpeg', 'Best Paper Award Finalist'],
+  ['assets/images/gallery/12-best-paper-award.jpeg', 'Best Paper Award'],
+  ['assets/images/gallery/13-group-photo.jpeg', 'Organizers & Speakers'],
+]
+
 const sponsor_introductions = [
   ['Sponsors', '15:10 - 15:15', 'Nokov'],
   ['Sponsors', '15:15 - 15:20', 'AgileX'],
@@ -132,6 +149,21 @@ const sponsor_introductions = [
   ['Sponsors', '15:25 - 15:30', 'ATEC'],
 ]
 
+
+// Full workshop recording. Per-session chapter links are built as
+// `${workshop_recording}&t=${seconds}s`. Keys: 'intro' for the opening,
+// otherwise the inv-talk speaker alias. Only sessions present in the video are listed.
+const workshop_recording = 'https://www.youtube.com/watch?v=3W7J-gDwJ8A'
+const recording_timestamps = {
+  'intro': 0,       // 00:00:00 Opening
+  'ad': 435,        // 00:07:15 Andrew Davison
+  'ds': 2425,       // 00:40:25 Dezhen Song
+  'mc': 4302,       // 01:11:42 Margarita Chli
+  'hb': 6161,       // 01:42:41 Hermann Blum
+  'aw': 8122,       // 02:15:22 Alex Wong
+  'tm': 9744,       // 02:42:24 Timothy D. Barfoot
+  'sc': 11372,      // 03:09:32 Sebastian Scherer
+}
 
 // event-alias, time slot, event name, detail alias, ppt mode
 // last two are for inv-talk event-alias entries
