@@ -51,6 +51,35 @@
       columns: 1;
     }
   }
+
+  .gallery-figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* Selector specificity must beat Bulma's `.image img { height: auto }` so all
+     thumbnails crop to a uniform tile instead of showing at native aspect ratio. */
+  .gallery-figure img.gallery-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .gallery-figure img.gallery-image:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+  }
+
+  .gallery-caption {
+    margin-top: 0.6rem;
+    font-size: 0.95rem;
+    color: #4a4a4a;
+  }
 </style>
 
 
@@ -169,6 +198,16 @@
                       <i class="fas fa-file-alt icon"></i>
                     </span>
                     <span>Paper Submission</span>
+                  </a>
+                </span>
+
+                <!-- Gallery Link. -->
+                <span class="link-block">
+                  <a href="#gallery" class="external-link button is-normal is-rounded is-link">
+                    <span class="icon">
+                      <i class="fas fa-images icon"></i>
+                    </span>
+                    <span>Gallery</span>
                   </a>
                 </span>
 
@@ -476,6 +515,21 @@
 
 
 
+  <section id="gallery" class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Gallery</h2>
+          <p class="has-text-centered has-text-grey mb-5">
+            Highlights from the MM-SpatialAI Workshop at ICRA 2026, Vienna.
+          </p>
+        </div>
+      </div>
+      <div id="gallery-content" class="columns is-multiline is-centered"></div>
+    </div>
+  </section>
+
+
   <section id="contact" class="section">
     <div class="container is-max-desktop">
       <!-- Contact. -->
@@ -497,7 +551,7 @@
 <script defer src="./assets/js/fontawesome.all.min.js"></script>
 <script src="./assets/js/bulma-carousel.min.js"></script>
 <script src="./assets/js/bulma-slider.min.js"></script>
-<script src="./assets/js/config.js?v=20260530a"></script>
-<script src="./assets/js/index.js?v=20260528"></script>
+<script src="./assets/js/config.js?v=20260614b"></script>
+<script src="./assets/js/index.js?v=20260614b"></script>
 
 </html>
